@@ -1,0 +1,42 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'java'
+}
+
+group 'com.outdatedversion'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+configurations {
+    shade
+    compile.extendsFrom shade
+}
+
+processResources {
+    filter ReplaceTokens, tokens: [
+            main: 'com.outdatedversion.AlgorithmVisualizer',
+            author: 'OutdatedVersion',
+            version: project.version
+    ]
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly group: 'com.destroystokyo', name: 'paper', version: '1.13.2-r1-625'
+}
+
+jar {
+    archiveName = baseName + '.jar'
+
+    configurations.shade.each { dep ->
+        from(project.zipTree(dep)) {
+            exclude 'META-INF', 'META-INF/**'
+        }
+    }
+}

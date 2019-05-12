@@ -1,0 +1,6 @@
+.idea/
+build/
+.gradle/
+
+test-server/
+!test-server/start.sh

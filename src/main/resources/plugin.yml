@@ -1,4 +1,5 @@
-name: Algorithm-Visualizer
+name: AlgorithmVisualizer
 main: @main@
 version: @version@
 author: @author@
+api-version: 1.13

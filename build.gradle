@@ -2,6 +2,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
 group 'com.outdatedversion'
@@ -9,34 +10,42 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-configurations {
-    shade
-    compile.extendsFrom shade
-}
+String basePackage = 'com.outdatedversion'
 
 processResources {
     filter ReplaceTokens, tokens: [
-            main: 'com.outdatedversion.AlgorithmVisualizer',
-            author: 'OutdatedVersion',
+            main   : basePackage + '.AlgorithmVisualizerPlugin',
+            author : 'OutdatedVersion',
             version: project.version
     ]
 }
 
+compileJava {
+    options.compilerArgs += ["-parameters"]
+    options.fork = true
+    options.forkOptions.executable = 'javac'
+}
+
 repositories {
-    mavenLocal()
     mavenCentral()
+    maven {
+        url 'https://papermc.io/repo/repository/maven-public/'
+    }
+
+    maven {
+        url 'https://repo.aikar.co/content/groups/aikar/'
+    }
 }
 
 dependencies {
-    compileOnly group: 'com.destroystokyo', name: 'paper', version: '1.13.2-r1-625'
+    compile "co.aikar:acf-paper:0.5.0-SNAPSHOT"
+    compile 'org.jetbrains:annotations:16.0.2'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    compileOnly group: 'com.destroystokyo.paper', name: 'paper-api', version: '1.16.4-R0.1-SNAPSHOT'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
-jar {
-    archiveName = baseName + '.jar'
-
-    configurations.shade.each { dep ->
-        from(project.zipTree(dep)) {
-            exclude 'META-INF', 'META-INF/**'
-        }
-    }
+shadowJar {
+    relocate 'co.aikar.commands', basePackage + '.acf'
+    relocate 'co.aikar.locales', basePackage + '.locales'
 }

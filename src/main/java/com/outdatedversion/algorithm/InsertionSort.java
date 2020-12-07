@@ -21,6 +21,7 @@ public class InsertionSort implements SortingAlgorithm {
       while (j >= 0 && array.get(j) > key) {
         array.set(j + 1, array.get(j));
         j = j - 1;
+        array.markCycle();
       }
       array.set(j + 1, key);
       array.markCycle();

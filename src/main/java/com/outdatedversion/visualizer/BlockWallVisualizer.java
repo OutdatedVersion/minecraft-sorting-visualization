@@ -48,9 +48,6 @@ public class BlockWallVisualizer implements Visualizer {
       return RenderIntent.WAIT;
     }
 
-    // *probably* the final spot
-    //    boolean isInFinalPosition = array.getWorkingArray()[operation.index()] == operation.value();
-
     this.setColumn(Material.YELLOW_CONCRETE, operation.index(), operation.value());
     return RenderIntent.WAIT;
   }

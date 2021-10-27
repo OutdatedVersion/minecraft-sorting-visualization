@@ -18,6 +18,8 @@ public class SortingAlgorithmFactory {
         return new HeapSort();
       case BUBBLE:
         return new BubbleSort();
+      case INTELLIGENT_DESIGN:
+        return new IntelligentDesignSort();
       default:
         throw new NotImplementedException("No implementation for sorting type: " + type.name());
     }

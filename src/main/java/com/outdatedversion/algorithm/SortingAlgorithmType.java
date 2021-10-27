@@ -38,7 +38,12 @@ public enum SortingAlgorithmType {
   /**
    * @see BubbleSort
    */
-  BUBBLE("Bubble");
+  BUBBLE("Bubble"),
+
+  /**
+   * @see IntelligentDesignSort
+   */
+  INTELLIGENT_DESIGN("Intelligent Design Sort");
 
   private final String friendlyName;
 }

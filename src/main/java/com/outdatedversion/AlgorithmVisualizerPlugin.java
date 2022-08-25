@@ -8,10 +8,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.stream.Stream;
 
-/**
- * @author Ben Watkins
- * @since May/11/2019
- */
 public class AlgorithmVisualizerPlugin extends JavaPlugin {
 
   @Override

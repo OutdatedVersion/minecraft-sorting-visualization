@@ -12,10 +12,6 @@ import org.bukkit.block.Sign;
 import org.bukkit.block.data.type.WallSign;
 import org.jetbrains.annotations.NotNull;
 
-/**
- * @author Ben Watkins
- * @since Dec/05/2020
- */
 public class BlockWallVisualizer implements Visualizer {
 
   private final VisualizedArray array;

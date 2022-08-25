@@ -2,10 +2,6 @@ package com.outdatedversion.visualizer.operation;
 
 import lombok.RequiredArgsConstructor;
 
-/**
- * @author Ben Watkins
- * @since Dec/06/2020
- */
 @RequiredArgsConstructor
 public class SetOperation implements Operation {
 

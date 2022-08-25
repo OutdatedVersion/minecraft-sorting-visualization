@@ -2,10 +2,6 @@ package com.outdatedversion.algorithm;
 
 import com.outdatedversion.visualizer.VisualizedArray;
 
-/**
- * @author Ben Watkins
- * @since Dec/05/2020
- */
 public interface SortingAlgorithm {
 
   /**

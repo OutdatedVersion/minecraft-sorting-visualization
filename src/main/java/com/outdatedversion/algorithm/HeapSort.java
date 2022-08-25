@@ -3,11 +3,8 @@ package com.outdatedversion.algorithm;
 import com.outdatedversion.visualizer.VisualizedArray;
 
 /**
- * Implementation of the heap sorting algorithm from
- * https://www.geeksforgeeks.org/heap-sort/
- *
- * @author Ben Watkins
- * @since Dec/06/2020
+ * Implementation of the heap sorting algorithm
+ * pulled from https://www.geeksforgeeks.org/heap-sort/
  */
 public class HeapSort implements SortingAlgorithm {
 

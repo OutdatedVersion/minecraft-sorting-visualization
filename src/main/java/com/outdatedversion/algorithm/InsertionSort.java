@@ -3,11 +3,8 @@ package com.outdatedversion.algorithm;
 import com.outdatedversion.visualizer.VisualizedArray;
 
 /**
- * Implementation of the insertion sorting algorithm from
- * https://www.geeksforgeeks.org/insertion-sort/
- *
- * @author Ben Watkins
- * @since Dec/05/2020
+ * Implementation of the insertion sorting algorithm
+ * pulled from https://www.geeksforgeeks.org/insertion-sort/
  */
 public class InsertionSort implements SortingAlgorithm {
 

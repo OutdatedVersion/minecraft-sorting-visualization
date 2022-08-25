@@ -24,10 +24,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * @author Ben Watkins
- * @since Nov/17/2020
- */
 @CommandAlias("sort|sorting")
 @RequiredArgsConstructor
 public class SortCommand extends BaseCommand {

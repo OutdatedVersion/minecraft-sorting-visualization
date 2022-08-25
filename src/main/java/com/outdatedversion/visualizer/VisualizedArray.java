@@ -12,10 +12,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * @author Ben Watkins
- * @since Dec/05/2020
- */
 public class VisualizedArray {
 
   @Getter(AccessLevel.PACKAGE) private final int[] initialArray;

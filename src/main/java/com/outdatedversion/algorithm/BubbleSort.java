@@ -3,10 +3,7 @@ package com.outdatedversion.algorithm;
 import com.outdatedversion.visualizer.VisualizedArray;
 
 /**
- * Implementation of the bubble sorting algorithm from https://www.geeksforgeeks.org/bubble-sort/
- *
- * @author Ben Watkins
- * @since Dec/06/2020
+ * Implementation of the bubble sorting algorithm pulled from https://www.geeksforgeeks.org/bubble-sort/
  */
 public class BubbleSort implements SortingAlgorithm {
 

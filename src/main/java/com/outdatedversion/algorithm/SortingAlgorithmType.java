@@ -3,10 +3,6 @@ package com.outdatedversion.algorithm;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-/**
- * @author Ben Watkins
- * @since Dec/05/2020
- */
 @Getter
 @RequiredArgsConstructor
 public enum SortingAlgorithmType {

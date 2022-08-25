@@ -5,10 +5,7 @@ import com.outdatedversion.visualizer.VisualizedArray;
 import java.util.Arrays;
 
 /**
- * Implementation of the radix sorting algorithm from https://www.geeksforgeeks.org/radix-sort/
- *
- * @author Ben Watkins
- * @since Dec/06/2020
+ * Implementation of the radix sorting algorithm pulled from https://www.geeksforgeeks.org/radix-sort/
  */
 public class RadixSort implements SortingAlgorithm {
 

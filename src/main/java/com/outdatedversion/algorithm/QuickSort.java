@@ -3,11 +3,8 @@ package com.outdatedversion.algorithm;
 import com.outdatedversion.visualizer.VisualizedArray;
 
 /**
- * Implementation of the radix sorting algorithm from
+ * Implementation of the radix sorting algorithm pulled from
  * https://www.geeksforgeeks.org/quick-sort/
- *
- * @author Ben Watkins
- * @since Dec/06/2020
  */
 public class QuickSort implements SortingAlgorithm {
 

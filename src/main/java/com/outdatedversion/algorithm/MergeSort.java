@@ -3,11 +3,8 @@ package com.outdatedversion.algorithm;
 import com.outdatedversion.visualizer.VisualizedArray;
 
 /**
- *  Implementation of the merging sorting algorithm from
- * https://www.geeksforgeeks.org/merge-sort/
- *
- * @author Ben Watkins
- * @since Dec/06/2020
+ *  Implementation of the merging sorting algorithm
+ *  pulled from https://www.geeksforgeeks.org/merge-sort/
  */
 public class MergeSort implements SortingAlgorithm {
 

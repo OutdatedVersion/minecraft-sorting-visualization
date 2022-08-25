@@ -2,10 +2,6 @@ package com.outdatedversion.algorithm;
 
 import org.apache.commons.lang.NotImplementedException;
 
-/**
- * @author Ben Watkins
- * @since Dec/06/2020Insertion
- */
 public class SortingAlgorithmFactory {
 
   public static SortingAlgorithm fromType(SortingAlgorithmType type) {

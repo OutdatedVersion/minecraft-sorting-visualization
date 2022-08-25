@@ -19,3 +19,5 @@ Includes:
 - Insertion sort
 - Merge sort
 - Radix sort
+- Bogo sort
+- "Intelligent design" sort
